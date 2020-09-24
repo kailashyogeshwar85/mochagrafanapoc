@@ -1,0 +1,29 @@
+{
+  "name": "testdashboardpoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive test/*.test.js",
+    "coverage": "nyc npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zebkailash/testdashboardpoc.git"
+  },
+  "author": "zebkailash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zebkailash/testdashboardpoc/issues"
+  },
+  "homepage": "https://github.com/zebkailash/testdashboardpoc#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.1.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nyc": "^15.1.0"
+  }
+}

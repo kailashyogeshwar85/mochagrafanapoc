@@ -22,6 +22,6 @@ Pipeline {
       Steps {
         sh 'echo "Saving results to InfluxDB"'
       }
-    }
+    } 
   }
 }

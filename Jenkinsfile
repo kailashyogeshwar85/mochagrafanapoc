@@ -1,25 +1,25 @@
-Pipeline {
-  Agent {
+pipeline {
+  agent {
     docker: {
       image: 'node:12.18.6:alpine3.9'
     }
   }
-  Environment {
+  environment {
     TEST = 'true'
   }
-  Stages {
-    Stage('Build') {
-      Steps {
+  stages {
+    stage('Build') {
+      steps {
         sh 'npm i'
       }
     }
-    Stage('Test') {
-      Steps {
+    stage('Test') {
+      steps {
         sh 'npm test'
       }
     }
-    Stage('Record Results') {
-      Steps {
+    stage('Record Results') {
+      steps {
         sh 'echo "Saving results to InfluxDB"'
       }
     }

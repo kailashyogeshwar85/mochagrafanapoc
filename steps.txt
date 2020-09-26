@@ -1,0 +1,10 @@
+Steps
+  Build
+    Install dependencies
+  Test
+    npm test
+  Report
+    #Challeng : Conversion of JSON to Line protocol
+    It will capture test data and save it to influxdb.
+  Mail Notification
+    It will send report to mail

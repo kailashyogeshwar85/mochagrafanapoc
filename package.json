@@ -4,23 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive test/*.test.js",
+    "test": "mocha --recursive test/*.test.js --reporter mochawesome --reporter-options reportDir=report",
     "coverage": "nyc npm test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zebkailash/testdashboardpoc.git"
+    "url": "git+https://github.com/kailashyogeshwar85/mochagrafanapoc"
   },
-  "author": "zebkailash",
+  "author": "kailashyogeshwar85@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zebkailash/testdashboardpoc/issues"
+    "url": "https://github.com/kailashyogeshwar85/mochagrafanapoc/issues"
   },
-  "homepage": "https://github.com/zebkailash/testdashboardpoc#readme",
+  "homepage": "https://github.com/kailashyogeshwar85/mochagrafanapoc#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
-    "mocha": "^8.1.3"
+    "mocha": "^8.1.3",
+    "mochawesome": "^6.1.1"
   },
   "dependencies": {
     "express": "^4.17.1",

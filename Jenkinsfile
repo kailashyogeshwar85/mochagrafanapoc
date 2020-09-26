@@ -5,7 +5,7 @@ Pipeline {
     }
   }
   Environment {
-    TEST = 'true',
+    TEST = 'true'
   }
   Stages {
     Stage('Build') {
@@ -22,6 +22,6 @@ Pipeline {
       Steps {
         sh 'echo "Saving results to InfluxDB"'
       }
-    } 
+    }
   }
 }
